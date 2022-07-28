@@ -1,24 +1,43 @@
 ﻿@model IQueryable<DeliveryOrder>
-<div>
-  Список заказов
-</div>
+@{
+    string strTitle = "Список всех заказов";
+    ViewBag.Title = strTitle;
+}
 
 <div>
     @if (Model.Any())
     {
-        <ul class="big-image-list">
+        <table class="myTable">
+             <thead>
+            <tr>
+                <td>Номер заказа</td>
+                <td>Город отправителя</td>
+                <td>Адрес отправителя</td>
+                <td>Город получателя</td>
+                <td>Адрес получателя</td>
+                <td>Вес груза, кг</td>
+                <td>Дата забора груза</td>
+            </tr>
+
+            </thead>
+            <tbody>
             @foreach (DeliveryOrder entity in Model)
             {
-                <li> 
-                    <h4>@entity.Id</h4>
-                    <h4>@entity.SenderCity</h4>
-                    <h4>@entity.SenderAddress</h4>
-                    <h4>@entity.RecipientCity</h4>
-                    <h4>@entity.RecipientAddress</h4>
-                    <h4>@entity.CargoWeight</h4>
-                    <p>@entity.DatePickup</p>
-                </li>
+                <tr>
+                    <td>@entity.Id</td>
+                    <td>@entity.SenderCity</td>
+                    <td>@entity.SenderAddress</td>
+                    <td>@entity.RecipientCity</td>
+                    <td>@entity.RecipientAddress</td>
+                    <td>@entity.CargoWeight</td>
+                    <td>@entity.DatePickup.ToShortDateString()</td>
+                </tr>
+
+
             }
-        </ul>
+            </tbody>
+        </table>
+
     }
 </div>
+

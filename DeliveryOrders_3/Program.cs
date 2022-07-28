@@ -37,8 +37,12 @@ app.UseStaticFiles(); //поддержка статичных файлов (js css и тд)
 
 app.UseRouting(); //подключаем систему маршрутизации
 
-app.MapControllerRoute(
+    app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=CreateOrder}/{action=Create}/{id?}");
+
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

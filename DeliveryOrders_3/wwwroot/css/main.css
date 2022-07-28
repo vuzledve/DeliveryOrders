@@ -1624,7 +1624,7 @@ ul.link-list li:first-child {
   }
 }
 .div-box {
-  padding: 15px 0;
+  padding: 0 45%;
 }
 .div-box label {
   display: block;
@@ -1637,4 +1637,40 @@ ul.link-list li:first-child {
   display: block;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.myTable {
+  text-decoration: none;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+.myTable td {
+  font-size: 25px;
+  color: #000000;
+}
+
+.myTable td, .myTable th {
+  white-space: pre-wrap;
+  padding: 10px 5px;
+  line-height: 30px;
+  vertical-align: middle;
+  border: 1px solid #354251;
+}
+
+.myTable tr:hover {
+  background-color: #f9fafb;
+}
+
+.myTable tr:hover td {
+  color: #354251;
+  cursor: default;
+}
+
+.myTable thead {
+  font-weight: normal;
+  font-size: 20px;
+  color: #000000;
+  background-color: #0086a5;
 }

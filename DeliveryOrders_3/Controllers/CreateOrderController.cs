@@ -1,5 +1,5 @@
 ﻿using DeliveryOrders_3.Domain;
-using DeliveryOrders_3.Domain.Entities;
+using DeliveryOrders_3.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DeliveryOrders_3.Controllers

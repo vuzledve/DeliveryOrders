@@ -5,9 +5,9 @@
 }
 
 
-<div>
+<div class = "div-box">
     <h2>@strTitle</h2>
-    <div>
+    <div >
         <form asp-area="" asp-controller="CreateOrder" asp-action="Create" method="post" enctype="multipart/form-data">
        
              <div asp-validation-summary="All"></div>
@@ -41,9 +41,6 @@
                 <input asp-for="DatePickup" />
                 <span asp-validation-for="DatePickup"></span>
             </div>
-           
-
-
             <div>
                 <input type="submit" value="Создать новый заказ" />
             </div>
@@ -54,5 +51,3 @@
 
 
 
-
-                

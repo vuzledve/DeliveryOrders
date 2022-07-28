@@ -241,25 +241,25 @@
 
 /* Reusable */
 
-	article {
-		&.blog-post {
-			position: relative;
+article {
+	&.blog-post {
+		position: relative;
 
-			.comments {
-				position: absolute;
-				top: 0;
-				right: 0;
-				height: 32px;
-				line-height: 24px;
-				padding-left: 40px;
-				background: url('images/icon-bubble.png') no-repeat;
-			}
+		.comments {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 32px;
+			line-height: 24px;
+			padding-left: 40px;
+			background: url('images/icon-bubble.png') no-repeat;
+		}
 
-			.blog-post-image {
-				width: 100%;
-			}
+		.blog-post-image {
+			width: 100%;
 		}
 	}
+}
 
 	ul {
 		&.small-image-list {
@@ -797,20 +797,60 @@
 
 	}
 
-	.div-box {
-		padding: 15px 0;
+.div-box {
+	padding: 0 45%;
+	
 
-		label {
-			display: block;
-		}
-
-		a {
-			display: block;
-		}
+	label {
+		display: block;
 	}
+
+	a {
+		display: block;
+	}
+}
 
 	.img-block {
-		display: block;
-		max-width: 100%;
-		margin:0 auto;
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
 	}
+
+	.myTable {
+		text-decoration: none;
+		border-collapse: collapse;
+		width: 100%;
+		text-align: center;
+	}
+
+
+
+.myTable td {
+	font-size: 25px;
+	color: #000000;
+}
+
+.myTable td, .myTable th {
+	white-space: pre-wrap;
+	padding: 10px 5px;
+	line-height: 30px;
+	vertical-align: middle;
+	border: 1px solid #354251;
+}
+
+.myTable tr:hover {
+	background-color: #f9fafb
+}
+
+.myTable tr:hover td {
+	color: #354251;
+	cursor: default;
+}
+
+
+.myTable thead {
+	font-weight: normal;
+	font-size: 20px;
+	color: #000000;
+	background-color: #0086a5;
+}

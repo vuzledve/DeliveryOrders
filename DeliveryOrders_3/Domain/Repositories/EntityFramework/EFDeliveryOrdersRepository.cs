@@ -1,5 +1,5 @@
-﻿using DeliveryOrders_3.Domain.Entities;
-using DeliveryOrders_3.Domain.Repositories.Abstract;
+﻿using DeliveryOrders_3.Domain.Repositories.Abstract;
+using DeliveryOrders_3.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DeliveryOrders_3.Domain.Repositories.EntityFramework
