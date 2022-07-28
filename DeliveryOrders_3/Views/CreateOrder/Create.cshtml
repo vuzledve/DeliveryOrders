@@ -55,36 +55,36 @@
     <div >
         <form asp-area="" asp-controller="CreateOrder" asp-action="Create" method="post" enctype="multipart/form-data">
        
-            @* <div asp-validation-summary="All"></div>*@
+            <div asp-validation-summary="All"></div>
             <div>
                 <label asp-for="SenderCity"></label>
                 <input asp-for="SenderCity" />
-                <span asp-validation-for="SenderCity"></span>
+           @*     <span asp-validation-for="SenderCity"></span>*@
             </div>
             <div>
                 <label asp-for="SenderAddress"></label>
                 <input asp-for="SenderAddress" />
-                <span asp-validation-for="SenderAddress"></span>
+          @*      <span asp-validation-for="SenderAddress"></span>*@
             </div>
             <div>
                 <label asp-for="RecipientCity"></label>
                 <input asp-for="RecipientCity" />
-                <span asp-validation-for="RecipientCity"></span>
+            @*    <span asp-validation-for="RecipientCity"></span>*@
             </div>
             <div>
                 <label asp-for="RecipientAddress"></label>
                 <input asp-for="RecipientAddress" />
-                <span asp-validation-for="RecipientAddress"></span>
+            @*    <span asp-validation-for="RecipientAddress"></span>*@
             </div>
              <div>
                 <label asp-for="CargoWeight"></label>
                 <input asp-for="CargoWeight" />
-                <span asp-validation-for="CargoWeight"></span>
+               @* <span asp-validation-for="CargoWeight"></span>*@
             </div>
              <div>
                 <label asp-for="DatePickup"></label>
                 <input asp-for="DatePickup" />
-                <span asp-validation-for="DatePickup"></span>
+            @*    <span asp-validation-for="DatePickup"></span>*@
             </div>
             <div >
                 <input class="myButton" type="submit" value="Создать новый заказ" />

@@ -6,32 +6,13 @@ namespace DeliveryOrders_3.Domain
     public class AppDbContext : DbContext
     {
         public DbSet<DeliveryOrder> DeliveryOrders { get; set; }
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)   { }
 
-        /// <summary>
-        /// </summary>
-
-        public AppDbContext(DbContextOptions<AppDbContext> options)
-            : base(options)
-        {
-            // Database.EnsureCreated(); //https://ru.stackoverflow.com/questions/1098397/there-is-already-an-object-named-%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-in-the-database-%D0%BF%D1%80%D0%B8-%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BC%D0%B8%D0%B3
-        }
-
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    var configuration = new ConfigurationBuilder()
-        //        .SetBasePath(Directory.GetCurrentDirectory())
-        //        .AddJsonFile("appsettings.json")
-        //        .Build();
-
-        //    var connectionString = configuration.GetConnectionString("AppDb");
-        //    optionsBuilder.UseSqlServer(connectionString);
-        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-         
             modelBuilder.Entity<DeliveryOrder>().HasData(new DeliveryOrder
             {
                 Id = new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"),

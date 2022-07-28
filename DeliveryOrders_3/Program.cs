@@ -20,9 +20,6 @@ builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlServer(Config.Connectio
 //var connectionString = builder.Configuration.GetConnectionString("AppDb");
 //builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlServer(connectionString));
 
-
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -37,12 +34,8 @@ app.UseStaticFiles(); //поддержка статичных файлов (js css и тд)
 
 app.UseRouting(); //подключаем систему маршрутизации
 
-    app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=CreateOrder}/{action=Create}/{id?}");
-
-//app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
+name: "default",
+pattern: "{controller=CreateOrder}/{action=Create}/{id?}");
 
 app.Run();
