@@ -1624,13 +1624,21 @@ ul.link-list li:first-child {
   }
 }
 .div-box {
-  padding: 0 45%;
+  margin: 0, 45%;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
 }
 .div-box label {
   display: block;
+  padding: 5px;
 }
 .div-box a {
   display: block;
+  padding: 5px;
+}
+.div-box input {
+  font-size: 25px;
 }
 
 .img-block {
@@ -1673,4 +1681,28 @@ ul.link-list li:first-child {
   font-size: 20px;
   color: #000000;
   background-color: #0086a5;
+}
+
+.myButton {
+  margin: 10px 0 0 0;
+  text-decoration: none;
+  text-align: center;
+  padding: 11px 20px;
+  border: solid 2px #004F72;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  font: 18px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #E5FFFF;
+  background-color: #3BA4C7;
+  background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%);
+  background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%);
+  background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%);
+  background-image: -ms-linear-gradient(top, #3BA4C7 0%, #1982A5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1982A5", endColorstr="#1982A5",GradientType=0 );
+  background-image: linear-gradient(top, #3BA4C7 0%, #1982A5 100%);
+  -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
 }
