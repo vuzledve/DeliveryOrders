@@ -8,36 +8,32 @@
     @if (Model.Any())
     {
         <table class="myTable">
-             <thead>
-            <tr>
-                <td>Номер заказа</td>
-                <td>Город отправителя</td>
-                <td>Адрес отправителя</td>
-                <td>Город получателя</td>
-                <td>Адрес получателя</td>
-                <td>Вес груза, кг</td>
-                <td>Дата забора груза</td>
-            </tr>
-
+            <thead>
+                <tr>
+                    <td>Номер заказа</td>
+                    <td>Город отправителя</td>
+                    <td>Адрес отправителя</td>
+                    <td>Город получателя</td>
+                    <td>Адрес получателя</td>
+                    <td>Вес груза, кг</td>
+                    <td>Дата забора груза</td>
+                </tr>
             </thead>
             <tbody>
-            @foreach (DeliveryOrder entity in Model)
-            {
-                <tr>
-                    <td>@entity.Id</td>
-                    <td>@entity.SenderCity</td>
-                    <td>@entity.SenderAddress</td>
-                    <td>@entity.RecipientCity</td>
-                    <td>@entity.RecipientAddress</td>
-                    <td>@entity.CargoWeight</td>
-                    <td>@entity.DatePickup.ToShortDateString()</td>
-                </tr>
-
-
-            }
+                @foreach (DeliveryOrder entity in Model)
+                {
+                    <tr>
+                        <td>@entity.Id</td>
+                        <td>@entity.SenderCity</td>
+                        <td>@entity.SenderAddress</td>
+                        <td>@entity.RecipientCity</td>
+                        <td>@entity.RecipientAddress</td>
+                        <td>@entity.CargoWeight</td>
+                        <td>@entity.DatePickup.ToShortDateString()</td>
+                    </tr>
+                }
             </tbody>
         </table>
-
     }
 </div>
 

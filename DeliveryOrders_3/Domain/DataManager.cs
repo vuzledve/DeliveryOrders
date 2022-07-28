@@ -1,7 +1,6 @@
 ﻿using DeliveryOrders_3.Domain.Repositories.Abstract;
 namespace DeliveryOrders_3.Domain
 {
-
     //точка входа для DbContext
     public class DataManager
     {

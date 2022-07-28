@@ -5,7 +5,6 @@ namespace DeliveryOrders_3.Models
 {
     public class DeliveryOrder
     {
-
         [Required]
         public Guid Id { get; set; } //номер заказа, он же его id
 
@@ -26,7 +25,6 @@ namespace DeliveryOrders_3.Models
         public string RecipientAddress { get; set; }
 
         [Required]
-
         [Display(Name = "Вес груза")]
         [Column(TypeName = "decimal(18,2)")]
         public decimal CargoWeight { get; set; }
