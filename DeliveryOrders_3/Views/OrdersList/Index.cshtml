@@ -1,0 +1,24 @@
+﻿@model IQueryable<DeliveryOrder>
+<div>
+  Список заказов
+</div>
+
+<div>
+    @if (Model.Any())
+    {
+        <ul class="big-image-list">
+            @foreach (DeliveryOrder entity in Model)
+            {
+                <li> 
+                    <h4>@entity.Id</h4>
+                    <h4>@entity.SenderCity</h4>
+                    <h4>@entity.SenderAddress</h4>
+                    <h4>@entity.RecipientCity</h4>
+                    <h4>@entity.RecipientAddress</h4>
+                    <h4>@entity.CargoWeight</h4>
+                    <p>@entity.DatePickup</p>
+                </li>
+            }
+        </ul>
+    }
+</div>
