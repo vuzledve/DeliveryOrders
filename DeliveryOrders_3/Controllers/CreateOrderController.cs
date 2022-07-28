@@ -1,5 +1,6 @@
 ﻿using DeliveryOrders_3.Domain;
 using DeliveryOrders_3.Models;
+using DeliveryOrders_3.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DeliveryOrders_3.Controllers
@@ -24,6 +25,7 @@ namespace DeliveryOrders_3.Controllers
             if (ModelState.IsValid)
             {  
                 dataManager.DeliveryOrders.SaveDeliveryOrder(model);
+                return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).CutController());
             }
             return View(model);
         }

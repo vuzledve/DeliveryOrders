@@ -8,10 +8,5 @@ namespace DeliveryOrders_3.Controllers
         {
             return View();
         }
-
-        public IActionResult CreateOrder()
-        {
-            return View();
-        }
     }
 }
